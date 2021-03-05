@@ -1,0 +1,26 @@
+Picior Catalin 312CB
+
+Total: [85/85]
+Bonus: [20/20]
+
+Am inceput tema prin implementarea unor structuri pt a reprezenta elementele
+browserului. In fisierele stack.c si queue.c sunt declaratiile functiilor
+implementarii generice. in antetul fct de reset si distrugere am folosit un
+pointer la functie pt a putea sterge diverse tipuri de elemente (pag web,
+resursa, denumiri de pag web etc.)
+
+In main.c am implementat "consola" programului, locul unde citesc linie cu
+linie din fisier si compar sirul de caractere cu comanda aferenta.
+
+Am impartit definitiile functiilor pe categorii: in navigation&Helpers se afla
+functii ajutatoare care returneaza informatii precum setarea latimii de banda
+sau aflarea unui parametru al unei comenzi, functii de navigare in browser
+(schimbare tab, accesare pagina web, trecerea timpului, back si forward etc).
+In fisierul alocFun se afla functiile de alocare a diverselor tipuri de date:
+alocare pagina web cu toate campurile, alocare celule liste inlantuite, taburi;
+in fisierul freeFun se afla functiile de eliberare a memoriei structurilor unui
+browser, iar in deleteFun se afla functii care sterg elemente propriu-zise
+dintr-un browser precum taburi sau intrari in istoric. In fisierul displayFun
+se afla toate functiile ce tin de afisare: afisare taburi deschise, listarea 
+resurselor descarcabile sau starea listei de download.
+
